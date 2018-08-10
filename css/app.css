@@ -1,0 +1,18 @@
+label select#file_platform{
+    display: inline-block;
+    width: auto;
+}
+
+.action-column > span {
+    margin: .25rem;
+}
+.tags-column > span {
+    margin: .25rem;
+}
+
+#new_file {
+    position: absolute;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 20px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4-4.1.1/jszip-2.5.0/dt-1.10.18/af-2.3.0/b-1.5.2/b-colvis-1.5.2/b-html5-1.5.2/cr-1.5.0/fh-3.1.4/r-2.2.2/rg-1.0.3/rr-1.2.4/sc-1.5.0/sl-1.2.6/datatables.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <title>File List</title>
+</head>
+<body>
+
+    <div class="container">
+        <label class="control-label" for="file_platform">Platform
+        <select class="form-control form-control-sm" id="file_platform">
+            <option value="0">All</option>
+            <option value="playstation">Playstation</option>
+            <option value="snes">SNES</option>
+            <option value="nes">NES</option>
+            <option value="gameboy">GameBoy</option>
+        </select>
+        </label>
+        <table class="table table-responsive-lg table-hover" id="file_table"></table>
+    </div>
+
+    <button class="btn btn-primary" id="new_file" data-toggle="modal" data-target=".bd-example-modal-lg"><span class="fas fa-plus"></span></span></button>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add a New File</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="new_file_platform" class="col-form-label">Platform </label>
+                            <select class="form-control" id="new_file_platform">
+                                <option value="0">All</option>
+                                <option value="playstation">Playstation</option>
+                                <option value="snes">SNES</option>
+                                <option value="nes">NES</option>
+                                <option value="gameboy">GameBoy</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="new_file_region" class="col-form-label">Name </label>
+                            <input class="form-control" id="new_file_region" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">File</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                        <div class="form-group">
+                            <label for="new_file_region" class="col-form-label">Region </label>
+                            <select class="form-control" id="new_file_region">
+                                <option value="ntcs-u">NTSC-U</option>
+                                <option value="ntcs-j">NTSC-J</option>
+                                <option value="ntcs-c">NTSC-C</option>
+                                <option value="pal-a">PAL A</option>
+                                <option value="pal-b">PAL B</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="new_file_tags" class="col-form-label">Tags </label>
+                            <select multiple  class="form-control" id="new_file_tags">
+                                <option value="danger_fav">danger-fav</option>
+                                <option value="rare">rare</option>
+                                <option value="translated">translated</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/jszip-2.5.0/dt-1.10.18/af-2.3.0/b-1.5.2/b-colvis-1.5.2/b-html5-1.5.2/cr-1.5.0/fh-3.1.4/r-2.2.2/rg-1.0.3/rr-1.2.4/sc-1.5.0/sl-1.2.6/datatables.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
