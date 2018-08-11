@@ -87,7 +87,7 @@
         {
             "name": "Tales of Phantasia",
             "platform": "SNES",
-            "tags": ["deJap"],
+            "tags": ["Translated"],
             "file_size": "1kb",
             "download_count": 2,
             "region": "NTSC-J",

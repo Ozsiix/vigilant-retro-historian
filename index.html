@@ -10,7 +10,6 @@
     <title>File List</title>
 </head>
 <body>
-
     <div class="container">
         <label class="control-label" for="file_platform">Platform
         <select class="form-control form-control-sm" id="file_platform">
@@ -25,62 +24,7 @@
     </div>
 
     <button class="btn btn-primary" id="new_file" data-toggle="modal" data-target=".bd-example-modal-lg"><span class="fas fa-plus"></span></span></button>
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add a New File</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="new_file_platform" class="col-form-label">Platform </label>
-                            <select class="form-control" id="new_file_platform">
-                                <option value="0">All</option>
-                                <option value="playstation">Playstation</option>
-                                <option value="snes">SNES</option>
-                                <option value="nes">NES</option>
-                                <option value="gameboy">GameBoy</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="new_file_region" class="col-form-label">Name </label>
-                            <input class="form-control" id="new_file_region" type="text">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleFormControlFile1">File</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                        </div>
-                        <div class="form-group">
-                            <label for="new_file_region" class="col-form-label">Region </label>
-                            <select class="form-control" id="new_file_region">
-                                <option value="ntcs-u">NTSC-U</option>
-                                <option value="ntcs-j">NTSC-J</option>
-                                <option value="ntcs-c">NTSC-C</option>
-                                <option value="pal-a">PAL A</option>
-                                <option value="pal-b">PAL B</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="new_file_tags" class="col-form-label">Tags </label>
-                            <select multiple  class="form-control" id="new_file_tags">
-                                <option value="danger_fav">danger-fav</option>
-                                <option value="rare">rare</option>
-                                <option value="translated">translated</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Add</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
