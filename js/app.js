@@ -161,10 +161,6 @@ const uploader = {
         $.each(tags, (key, value) => {
             $('<option>', {value: value, text: value}).appendTo(select);
         });
-
-
-
-
     },
     /**
      * clear the model data
